@@ -1,6 +1,6 @@
-# Ollama Text Generation API
+# Local LLM API Load Testing for Production
 
-A FastAPI-based API for generating text using the `llama2` model via the `Ollama` integration. This project includes load testing capabilities using Locust to ensure the API can handle high traffic efficiently.
+A FastAPI-based API for generating text using the `gemma2` model via the `Ollama` integration. This project includes load testing capabilities using Locust to ensure the API can handle high traffic efficiently.
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ A FastAPI-based API for generating text using the `llama2` model via the `Ollama
 ## Features
 
 - **FastAPI**: High-performance web framework for building APIs.
-- **Ollama Integration**: Utilize the `llama2` model for text generation.
+- **Ollama Integration**: Utilize the `gemma2` model for text generation.
 - **Pydantic**: Data validation and settings management using Python type annotations.
 - **Asynchronous Endpoints**: Efficient handling of multiple requests concurrently.
 - **Automatic API Documentation**: Interactive Swagger and Redoc documentation.
@@ -28,7 +28,7 @@ A FastAPI-based API for generating text using the `llama2` model via the `Ollama
 
 - **Programming Language**: Python 3.8+
 - **Framework**: FastAPI
-- **Language Model**: Ollama (`llama2`)
+- **Language Model**: Ollama (`gemma2:2b`)
 - **Data Validation**: Pydantic
 - **Load Testing**: Locust
 
@@ -60,7 +60,7 @@ pip install fastapi uvicorn pydantic langchain-community locust
 
 *Set Up Ollama*
 
-Ensure that the Ollama CLI is installed and the llama2 model is pulled:
+Ensure that the Ollama CLI is installed and the gemma2 model is pulled:
 
 bash
 Copy code
